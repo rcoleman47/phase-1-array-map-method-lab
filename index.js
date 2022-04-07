@@ -14,3 +14,15 @@ const tutorials = [
 const titleCased = () => {
   return tutorials
 }
+
+const split = tutorials.map(((array)=> array.split(" ")
+  ))
+console.log(split)
+const uppercase = (array) => {
+  return array.map((string) => {
+    return string.toString().charAt(0).toUpperCase();
+    });
+}
+
+
+console.log(uppercase(split))
